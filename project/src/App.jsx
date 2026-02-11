@@ -7,6 +7,7 @@ import DataTable from './components/DataTable'
 import MediaCard from './components/Mediacard'
 import Nav from './components/Nav'
 import { Routes, Route } from 'react-router-dom'
+import StateBasics from './components/StateBasics'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -15,12 +16,13 @@ function App() {
     <>
      <Nav/> <br />
      {/* <MediaCard/> */}
-     {/* <Routes>
-      <Route path='/' element={<DataTable/>}/>
-      <Route path='/data' element={<DataTable/>}/>
-
-     </Routes> */}
-      <DataTable/>
+     <Routes>
+      <Route path='/' element={<MediaCard/>}/>
+      <Route path='/t' element={<DataTable/>}/>
+       <Route path='/c' element={<StateBasics/>}/>  
+    
+     </Routes>
+      {/* <DataTable/> */}
 
     </>
   )
