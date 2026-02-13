@@ -53,6 +53,11 @@ const Nav = () => {
                 Example
               </Link>
             </Button>
+            <Button color="inherit">
+              <Link to="/a" style={{ textDecoration: "none", color: "white" }}>
+                API Data
+              </Link>
+            </Button>
           </Toolbar>
         </AppBar>
       </Box>

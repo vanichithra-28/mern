@@ -10,6 +10,7 @@ import { Routes, Route } from 'react-router-dom'
 import StateBasics from './components/StateBasics'
 import Counter from './components/Counter'
 import Example from './components/Example'
+import Apidata from './components/Apidata'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -24,6 +25,9 @@ function App() {
        <Route path='/c' element={<StateBasics/>}/>  
         <Route path='/b' element={<Counter/>}/>
      <Route path='/e' element={<Example/>}/>
+          <Route path='/a' element={<Apidata/>}/>
+
+     
      </Routes>
       {/* <DataTable/> */}
 
